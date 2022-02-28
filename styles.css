@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+	place-items: center;
+	height: 100vh;
+	background-image: url(./images/bg_blurry.svg);
+	background-size: cover;
+    color: white;
+}
+
+#main_bx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 4rem;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    position: relative;
+}
+
+/* form box */
+.glass_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.glass_form h3,
+.resultBox h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.inputFields .inputBox{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.inputFields .inputBox input,
+.inputFields .inputBox select {
+    width: 200px;
+    margin: 0 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    padding: .9rem 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+}
+
+.inputFields .inputBox select{
+    width: 50% !important;
+}
+
+.inputFields .inputBox select option{
+    color: rgba(97, 55, 247, 0.904);
+    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.inputBox input::placeholder {
+    color: currentColor;
+    text-transform: capitalize;
+}
+
+.inputBox input[type="file"]{
+    padding: 0 0 0 0;
+    width: 241px;
+}
+
+.inputBox input[type="file"]::-webkit-file-upload-button {
+    background-color: rgba(97, 55, 247, 0.397);
+    color: white;
+    border: 0;
+    padding: 1rem 0.5rem;
+    margin-right: 15px;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+.glass_form button {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    max-width: fit-content;
+    cursor: pointer;
+    transition: transform 150ms ease;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    margin: 20px auto 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.glass_form button:hover{
+    transform: scale(1.1);
+}
+
+
+/* response receipt */
+/* .resultBox {
+
+} */
+
+.dataBox {
+    display: flex;
+}
+
+.dataBox .profilePic{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.dataBox .profilePic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.dataBox .userInfo{
+    width: 300px;
+}
+
+.dataBox .userInfo p{
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.dataBox .userInfo p span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}

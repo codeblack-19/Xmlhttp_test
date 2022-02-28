@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - dannyDotCom</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main id="main_bx">
+        <form class="glass_form" id="coventryForm" action="index.html" method="post" enctype="multipart/form-data">
+            <h3>Coventry Form</h3>
+
+            <div class="inputFields">
+                <div class="inputBox">
+                    <input type="text" placeholder="Full name" name="fullname" required />
+                    <input type="email" placeholder="email" name="email" required />
+                </div>
+                <div class="inputBox">
+                    <input type="date" placeholder="Date of birth" name="dob" required />
+                    <input type="phone" placeholder="phone number" name="phoneNum" required />
+                </div>
+                <div class="inputBox">
+                    <select name="gender" required >
+                        <option value="....">Gender...</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <select name="maritalStatus" required>
+                        <option value="....">Marital Status....</option>
+                        <option value="single">single</option>
+                        <option value="married">married</option>
+                        <option value="divorce">divorce</option>
+                        <option value="separated">separated</option>
+                        <option value="widow">widow</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="ECOWAS ID" name="IDnum" required />
+                    <input type="file" placeholder="profile picture" accept="image/*" name="profilePic" required/>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        
+
+    </main>
+    
+</body>
+<script src="./request.js"></script>
+</html>
