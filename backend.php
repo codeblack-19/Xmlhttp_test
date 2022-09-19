@@ -22,7 +22,7 @@
                         Date of birth:  <span>'.$_POST['dob'].'</span>
                     </p>
                     <p>
-                        Email:  <span>'.$_POST['email'].'</span>
+                        Email:  <span class="email">'.$_POST['email'].'</span>
                     </p>
                     <p>
                         Gender:  <span>'.$_POST['gender'].'</span>

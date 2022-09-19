@@ -138,6 +138,7 @@ button:focus {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .dataBox .userInfo{
@@ -153,4 +154,8 @@ button:focus {
 .dataBox .userInfo p span{
     font-size: 1.4rem;
     font-weight: bold;
+}
+
+.dataBox .userInfo p .email{
+    text-transform: lowercase;
 }
